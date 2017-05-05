@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".JuntasActivity" />
+        <activity android:name=".InvitacionEnviadaActivity" />
+        <activity android:name=".DetalleJuntaActivity" />
+        <activity android:name=".InvitacionesActivity"></activity>
     </application>
 
 </manifest>
