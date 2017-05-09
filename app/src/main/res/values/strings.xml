@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">juntacion</string>
+    <string name="title_activity_login">Inicio Sesión</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Correo</string>
+    <string name="prompt_password">Clave (opcional)</string>
+    <string name="action_sign_in">Iniciar sesión</string>
+    <string name="action_sign_in_short">Registrarse</string>
+    <string name="error_invalid_email">La dirección de correo es inválida</string>
+    <string name="error_invalid_password">La clave es demasiado corta</string>
+    <string name="error_incorrect_password">La clave es incorrecta</string>
+    <string name="error_field_required">Este campo es requerido</string>
+    <string name="permission_rationale">"Se necesitan permisos de contactos para proporcionar la
+        autocompletación del correo electrónico."
+    </string>
 </resources>
