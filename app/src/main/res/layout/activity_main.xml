@@ -1,18 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cl.darkcity.vv.juntacion.MainActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!--Accesos principales - btns circulares-->
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp">
+        
+        <!--ID @+id/btn_nueva_junta-->
+        <Button
+            android:id="@+id/btn_nueva_junta"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/btn_circular"
+            android:textColor="#fff"
+            android:text="Nueva Junta"
+            android:textStyle="bold"
+            android:textSize="12pt"
+            android:layout_above="@+id/btn_repite_junta"
+            android:layout_alignParentEnd="true" />
+        
+        <!--ID @+id/btn_repite_junta-->
+        <Button
+            android:id="@+id/btn_repite_junta"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/btn_circular"
+            android:textColor="#fff"
+            android:text="Repetir Junta"
+            android:textStyle="bold"
+            android:textSize="12pt"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+        
+     </RelativeLayout>
 
-</android.support.constraint.ConstraintLayout>
+    <!--caja con sugerencias y actividad de contactos-->
+    <LinearLayout
+        android:id="@+id/esta_pasando"
+        android:layout_width="265dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="7dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffdf88"
+                >
+
+        <!--ID @+id/list_esta_pasando-->
+        <ListView
+            android:id="@+id/list_esta_pasando"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         />
+    </LinearLayout>
+
+
+    <!--btn a notificaciones-->
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/mobile_notification-512"
+        />
+
+</RelativeLayout>
