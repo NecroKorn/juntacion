@@ -67,7 +67,7 @@
         android:layout_height="80dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:src="@drawable/mobile_notification-512"
+        android:src="@drawable/mobile_notification_512"
         />
 
 </RelativeLayout>
