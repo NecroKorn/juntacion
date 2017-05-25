@@ -1,13 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cl.darkcity.vv.juntacion.JuntasActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
+
+    <!--Título sección: JUNTAS-->
     <TextView
+        android:id="@+id/titulo_juntas"
+        android:text="JUNTAS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login Correcto!"/>
+        android:textStyle="bold"
+        android:textSize="12pt"
+        android:layout_above="@id/juntas"
+        android:layout_marginLeft="20dp"
+        />
 
-</android.support.constraint.ConstraintLayout>
+    <!--caja con lista de juntas-->
+    <LinearLayout
+        android:id="@+id/juntas"
+        android:layout_width="290dp"
+        android:layout_height="340dp"
+        android:layout_centerInParent="true"
+        android:background="#ffdf88"
+        >
+
+        <!--ID @+id/list_esta_pasando-->
+        <ListView
+            android:id="@+id/list_juntas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <!--ID @+id/btn_nueva_junta_interior-->
+    <Button
+        android:id="@+id/btn_nueva_junta_interior"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/btn_circular"
+        android:textColor="#fff"
+        android:text="Nueva Junta"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:layout_above="@+id/btn_repite_junta"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginRight="7dp"
+
+        />
+
+</RelativeLayout>
