@@ -1,9 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cl.darkcity.vv.juntacion.DetalleJuntaActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-</android.support.constraint.ConstraintLayout>
+
+    <!--Título sección: JUNTA-->
+    <TextView
+        android:id="@+id/titulo_juntas"
+        android:text="JUNTA:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="12pt"
+        android:layout_above="@id/detalle_junta"
+        android:layout_marginLeft="20dp"
+        />
+
+    <!--caja detalle junta-->
+    <LinearLayout
+        android:id="@+id/detalle_junta"
+        android:layout_width="290dp"
+        android:layout_height="340dp"
+        android:layout_centerInParent="true"
+        android:background="#ffdf88"
+        android:orientation="vertical"
+        >
+
+        <!--Título sección: JUNTA:-->
+        <TextView
+            android:id="@+id/txt_tit"
+            android:text="AMIGOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11pt"
+            android:background="#ffe7a6"
+            />
+
+
+        <!--ID @+id/contacto_junta-->
+        <ListView
+            android:id="@+id/contacto_junta"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+
+            />
+
+        <!-- ID @+id/lugar_junta -->
+        <TextView
+            android:id="@+id/lugar_junta"
+            android:text="lugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11pt"
+            android:background="#ffe7a6"
+            />
+
+        <!-- ID @+id/fecha_junta -->
+        <TextView
+            android:id="@+id/fecha_junta"
+            android:text="fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11pt"
+            />
+
+        <!--caja botones accion junta-->
+        <LinearLayout
+            android:id="@+id/btn_junta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#ffdf88"
+            android:orientation="horizontal"
+            >
+
+            <!--ID @+id/btn_cancelar-->
+            <Button
+                android:id="@+id/btn_cancelar"
+                android:layout_width="145dp"
+                android:layout_height="100dp"
+                android:background="#fa6e3f"
+                android:textColor="#fff"
+                android:text="Cancelar"
+                android:textStyle="bold"
+                android:textSize="8pt"
+                />
+
+            <!--ID @+id/btn_invitar-->
+            <Button
+                android:id="@+id/btn_invitar"
+                android:layout_width="145dp"
+                android:layout_height="100dp"
+                android:background="#fa6e3f"
+                android:textColor="#fff"
+                android:text="Invitar"
+                android:textStyle="bold"
+                android:textSize="8pt"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--ID @+id/btn_nueva_junta_interior-->
+    <Button
+        android:id="@+id/btn_nueva_junta_interior"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/btn_circular"
+        android:textColor="#fff"
+        android:text="Nueva Junta"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:layout_above="@+id/btn_repite_junta"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginRight="7dp"
+        />
+
+</RelativeLayout>
