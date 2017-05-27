@@ -50,6 +50,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:background="#ffdf88"
+        android:orientation="vertical"
                 >
 
         <!--ID @+id/list_esta_pasando-->
@@ -62,12 +63,12 @@
 
 
     <!--btn a notificaciones-->
-    <ImageButton
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:src="@drawable/mobile_notification_512"
+        android:background="@drawable/mobile_notification512"
         />
 
 </RelativeLayout>

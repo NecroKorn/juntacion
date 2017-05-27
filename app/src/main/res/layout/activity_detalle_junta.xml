@@ -13,11 +13,11 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="12pt"
-        android:layout_above="@id/detalle_junta"
+        android:layout_above="@+id/detalle_junta"
         android:layout_marginLeft="20dp"
         />
 
-    <!--caja detalle junta-->
+    <!--caja detalle_junta -->
     <LinearLayout
         android:id="@+id/detalle_junta"
         android:layout_width="290dp"
