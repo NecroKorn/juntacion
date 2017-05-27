@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -50,8 +48,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:background="#ffdf88"
-        android:orientation="vertical"
-                >
+        android:orientation="vertical">
 
         <!--ID @+id/list_esta_pasando-->
         <ListView
@@ -68,7 +65,7 @@
         android:layout_height="90dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:background="@drawable/mobile_notification512"
+        android:background="@drawable/mobile_notification_512"
         />
 
 </RelativeLayout>
