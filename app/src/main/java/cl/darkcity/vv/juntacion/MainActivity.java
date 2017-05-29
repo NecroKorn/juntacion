@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnNuevaJunta = (Button) findViewById(R.id.btnNuevaJunta);
+        Button btnNuevaJunta = (Button) findViewById(R.id.btn_nueva_junta);
         btnNuevaJunta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
