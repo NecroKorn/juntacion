@@ -1,8 +1,62 @@
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cl.darkcity.vv.juntacion.InvitacionEnviadaActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-</android.support.constraint.ConstraintLayout>
+
+    <!--caja con notificación-->
+    <LinearLayout
+        android:id="@+id/msj"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#ffdf88"
+        android:orientation="vertical"
+        android:padding="7dp"
+        >
+
+        <!--Mensaje confirma invitacion 1-->
+        <TextView
+            android:id="@+id/msj_inv_txt"
+            android:text="Invitación enviada a:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11pt"
+
+            />
+
+        <!--Mensaje confirma invitacion 2-->
+        <TextView
+            android:id="@+id/grupo_txt"
+            android:text="AMIGOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11pt"
+            android:padding="7dp"
+            android:textAlignment="center"
+            android:background="#f9edc4"
+
+            />
+
+    </LinearLayout>
+
+    <!--ID @+id/btn_nueva_junta_interior-->
+    <Button
+        android:id="@+id/btn_nueva_junta_interior"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/btn_circular"
+        android:textColor="#fff"
+        android:text="Nueva Junta"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:layout_above="@+id/btn_repite_junta"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginRight="7dp"
+
+        />
+
+</RelativeLayout>
