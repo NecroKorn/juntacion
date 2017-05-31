@@ -40,6 +40,8 @@ public class DetalleJuntaActivity extends AppCompatActivity {
         // Set The Adapter
         lsvAmigos.setAdapter(arrayAdapter);
 
+        arrayAdapter.notifyDataSetChanged();
+
         // register onClickListener to handle click events on each item
         lsvAmigos.setOnItemClickListener(new AdapterView.OnItemClickListener()
         {
