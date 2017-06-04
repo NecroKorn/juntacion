@@ -1,8 +1,72 @@
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cl.darkcity.vv.juntacion.InvitacionesActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-</android.support.constraint.ConstraintLayout>
+    <!--Título sección: INVITACIONES-->
+    <TextView
+        android:id="@+id/titulo_invitaciones"
+        android:text="INVITACIONES:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="12pt"
+        android:layout_above="@+id/detalle_inv"
+        android:layout_marginLeft="20dp"
+        />
+
+    <!--caja detalle_inv -->
+    <LinearLayout
+        android:id="@+id/detalle_inv"
+        android:layout_width="290dp"
+        android:layout_height="340dp"
+        android:layout_centerInParent="true"
+        android:background="#ffdf88"
+        android:orientation="vertical"
+        >
+
+        <!-- elemento 1 -->
+        <TextView
+            android:id="@+id/txt_inv_1"
+            android:text="AMIGOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11pt"
+            android:background="#ffe7a6"
+            android:textAlignment="center"
+            />
+
+        <!--ID @+id/contacto_inv-->
+        <ListView
+            android:id="@+id/contacto_inv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:dividerHeight="1dp"
+            android:divider="#fff"
+            />
+
+        <!-- elemento 2 -->
+        <TextView
+            android:id="@+id/txt_inv_2"
+            android:text="CUMPLE TIA ANA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11pt"
+            android:background="#ffe7a6"
+            android:textAlignment="center"
+            />
+
+        <!--ID @+id/contacto_inv_2-->
+        <ListView
+            android:id="@+id/contacto_inv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"   
+            android:dividerHeight="1dp"
+            android:divider="#fff"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
