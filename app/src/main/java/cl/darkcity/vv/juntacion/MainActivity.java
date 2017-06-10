@@ -21,15 +21,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnNuevaJunta = (Button) findViewById(R.id.btn_nueva_junta);
-        btnNuevaJunta.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent myIntent = new Intent(MainActivity.this,DetalleJuntaActivity.class);
-                MainActivity.this.startActivity(myIntent);
-            }
-        });
-
         Button btnRrepiteJunta = (Button) findViewById(R.id.btn_repite_junta);
         btnRrepiteJunta.setOnClickListener(new View.OnClickListener() {
             @Override
