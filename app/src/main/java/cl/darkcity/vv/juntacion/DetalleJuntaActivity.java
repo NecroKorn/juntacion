@@ -45,7 +45,7 @@ public class DetalleJuntaActivity extends AppCompatActivity {
             fechaJuntacion.setText("25/10/2017");
         }
 
-        ListView lsvAmigos = (ListView)findViewById(R.id.contacto_junta);
+        ListView lsvAmigos = (ListView)findViewById(R.id.contactos_junta);
 
         amigos = new ArrayList<String>();
         getAmigos();
