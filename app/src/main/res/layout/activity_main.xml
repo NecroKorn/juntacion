@@ -55,6 +55,13 @@
         android:background="#ffdf88"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOTIFICACIONES:"
+            android:background="#fff1a1"
+            android:padding="7dp"/>
+
         <!--ID @+id/list_esta_pasando-->
         <ListView
             android:id="@+id/list_esta_pasando"
