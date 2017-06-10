@@ -24,7 +24,8 @@
             android:textStyle="bold"
             android:textSize="12pt"
             android:layout_above="@+id/btn_repite_junta"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="40dp"/>
         
         <!--ID @+id/btn_repite_junta-->
         <Button
@@ -37,13 +38,14 @@
             android:textStyle="bold"
             android:textSize="12pt"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="44dp"/>
         
      </RelativeLayout>
 
     <!--caja con sugerencias y actividad de contactos-->
     <LinearLayout
-        android:id="@id/esta_pasando"
+        android:id="@+id/esta_pasando"
         android:layout_width="265dp"
         android:layout_height="200dp"
         android:layout_marginStart="7dp"
@@ -68,7 +70,7 @@
         android:layout_height="90dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@id/esta_pasando"
+        android:layout_toRightOf="@+id/esta_pasando"
         android:src="@drawable/mobile_notification_512"
         android:scaleType="fitCenter"
         />
