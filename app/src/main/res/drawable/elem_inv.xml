@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--caja elemento invitaciones -->
 <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/contacto_inv"
     android:layout_width="290dp"
     android:layout_height="340dp"
     android:layout_centerInParent="true"
     android:background="#ffdf88"
-    android:orientation="horizontal"
->
+    android:orientation="horizontal">
 
     <!-- elemento -->
     <TextView

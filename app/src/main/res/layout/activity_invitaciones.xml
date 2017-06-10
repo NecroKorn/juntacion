@@ -28,7 +28,7 @@
         <!-- elemento 1 -->
         <TextView
             android:id="@+id/txt_inv_1"
-            android:text="AMIGOS"
+            android:text="INVITACIONES"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="11pt"
@@ -48,7 +48,7 @@
         <!-- elemento 2 -->
         <TextView
             android:id="@+id/txt_inv_2"
-            android:text="CUMPLE TIA ANA"
+            android:text="INVITADOS"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="11pt"
@@ -70,3 +70,4 @@
 
 
 </RelativeLayout>
+
