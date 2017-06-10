@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -26,6 +27,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent myIntent = new Intent(MainActivity.this,JuntasActivity.class);
+                MainActivity.this.startActivity(myIntent);
+            }
+        });
+
+        ImageButton btnInvitaciones = (ImageButton) findViewById(R.id.btn_invitaciones);
+        btnInvitaciones.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(MainActivity.this,InvitacionesActivity.class);
                 MainActivity.this.startActivity(myIntent);
             }
         });

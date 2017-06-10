@@ -47,8 +47,11 @@ public class JuntasActivity extends AppCompatActivity {
             // argument position gives the index of item which is clicked
             public void onItemClick(AdapterView<?> arg0, View v,int position, long arg3)
             {
-                String selectedmovie=juntas.get(position);
-                Toast.makeText(getApplicationContext(), "Junta seleccionada : "+selectedmovie,   Toast.LENGTH_LONG).show();
+                String selectedjuntacion=juntas.get(position);
+                Intent myIntent = new Intent(JuntasActivity.this,DetalleJuntaActivity.class);
+                myIntent.putExtra("juntacionSelecconada", selectedjuntacion);
+                JuntasActivity.this.startActivity(myIntent);
+                //Toast.makeText(getApplicationContext(), "Junta seleccionada : "+selectedmovie,   Toast.LENGTH_LONG).show();
             }
         });
 

@@ -58,11 +58,10 @@
         <!-- ID @+id/fecha_junta -->
         <TextView
             android:id="@+id/fecha_junta"
-            android:text="fecha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="11pt"
-            />
+            android:text="fecha"
+            android:textSize="11pt" />
 
         <!--caja botones accion junta-->
         <LinearLayout

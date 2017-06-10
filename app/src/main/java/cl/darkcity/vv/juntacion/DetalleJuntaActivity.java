@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -21,13 +22,28 @@ public class DetalleJuntaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle_junta);
 
-        Button btnNuevaJunta = (Button) findViewById(R.id.btn_nueva_junta_interior);
-        btnNuevaJunta.setOnClickListener(new View.OnClickListener() {
+        Button btnInvitar = (Button) findViewById(R.id.btn_invitar);
+        btnInvitar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent myIntent = new Intent(DetalleJuntaActivity.this,InvitacionEnviadaActivity.class);
+                DetalleJuntaActivity.this.startActivity(myIntent);
             }
         });
+
+        Intent intent = getIntent();
+
+        String juntacionSeleccionada = intent.getStringExtra("juntacionSelecconada");
+
+        if(juntacionSeleccionada != "")
+        {
+            TextView tituloJuntacion = (TextView) findViewById(R.id.txt_tit);
+            tituloJuntacion.setText(juntacionSeleccionada);
+            TextView lugarJuntacion = (TextView) findViewById(R.id.lugar_junta);
+            lugarJuntacion.setText("Nuevo Lugar");
+            TextView fechaJuntacion = (TextView) findViewById(R.id.fecha_junta);
+            fechaJuntacion.setText("25/10/2017");
+        }
 
         ListView lsvAmigos = (ListView)findViewById(R.id.contacto_junta);
 
