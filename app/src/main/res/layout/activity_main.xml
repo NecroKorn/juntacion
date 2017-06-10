@@ -18,6 +18,7 @@
             android:id="@+id/btn_nueva_junta"
             android:layout_width="150dp"
             android:layout_height="150dp"
+            android:scaleType="fitCenter"
             android:background="@drawable/btn_circular"
             android:textColor="#fff"
             android:text="Nueva Junta"
