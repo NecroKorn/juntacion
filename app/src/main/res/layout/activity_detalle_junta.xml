@@ -4,17 +4,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-<!--Título sección: JUNTA-->
-<TextView
-    android:id="@+id/titulo_juntas"
-    android:text="JUNTA:"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textStyle="bold"
-    android:textSize="12pt"
-    android:layout_above="@+id/detalle_junta"
-    android:layout_marginLeft="20dp"
-    />
+    <!--Título sección: DETALLE JUNTA-->
+    <TextView
+        android:id="@+id/titulo_juntas"
+        android:text="JUNTA:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="12pt"
+        android:layout_above="@+id/detalle_junta"
+        android:layout_marginLeft="20dp"
+        />
 
     <!--caja detalle_junta -->
     <RelativeLayout
@@ -32,9 +32,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fde6a5"
-            android:layout_alignParentTop="true"
+            android:layout_alignParentTop="true" >
 
-        >
             <!--Título sección: JUNTA:-->
              <TextView
                     android:id="@+id/txt_tit"
@@ -46,7 +45,6 @@
                     android:background="#ffe7a6"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-
                  />
 
                 <Button
@@ -56,8 +54,6 @@
                     android:background="@android:drawable/ic_input_add"
                     android:layout_toRightOf="@id/txt_tit"
                     android:scaleType="fitCenter"
-
-
                     />
 
         </RelativeLayout>
