@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--caja elemento invitaciones -->
+<LinearLayout
+    android:id="@+id/contacto_inv"
+    android:layout_width="290dp"
+    android:layout_height="340dp"
+    android:layout_centerInParent="true"
+    android:background="#ffdf88"
+    android:orientation="horizontal"
+>
+
+    <!-- elemento -->
+    <TextView
+        android:id="@+id/txt_inv"
+        android:text="Juan Perez"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="11pt"
+        android:background="#ffe7a6"
+        android:textAlignment="center"
+    />
+
+    <Button
+        android:id="@+id/estado"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="Adm"
+
+    />
+
+</LinearLayout>
