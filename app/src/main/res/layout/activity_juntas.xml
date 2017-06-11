@@ -49,7 +49,18 @@
         android:layout_alignParentRight="true"
         android:layout_marginBottom="35dp"
         android:layout_marginRight="7dp"
-
         />
+    
+    <!-- btn_atras -->
+    <Button
+        android:id="@+id/btn_atras"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/ic_menu_revert"
+        android:backgroundTint="#acadb1"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/juntas"
+        android:layout_alignStart="@+id/juntas"
+        android:layout_marginTop="11dp" />
 
 </RelativeLayout>
