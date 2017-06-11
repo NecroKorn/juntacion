@@ -74,7 +74,7 @@ public class DetalleJuntaActivity extends AppCompatActivity {
     void getAmigos()
     {
         amigos.add("Adrian");
-        amigos.add("Master chef");
+        amigos.add("Mr chef");
         amigos.add("Juan");
         amigos.add("Carla");
         amigos.add("Carlita");

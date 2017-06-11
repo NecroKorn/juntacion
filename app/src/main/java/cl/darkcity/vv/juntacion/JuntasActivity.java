@@ -59,15 +59,15 @@ public class JuntasActivity extends AppCompatActivity {
 
     void getJuntas()
     {
-        juntas.add("Cumpleaños mama");
-        juntas.add("Orrego Luco 1");
-        juntas.add("Bellavista on Flames");
-        juntas.add("Bellavista on Flames 2");
-        juntas.add("Bellavista on Flames 3");
-        juntas.add("Comida tia Juanita");
-        juntas.add("Bellavista on Flames 4");
-        juntas.add("Bellavista on Flames 5");
-        juntas.add("Bellavista on Flames 6");
+        juntas.add("Cumple mama");
+        juntas.add("Orrego Luco");
+        juntas.add("Bella on Flames");
+        juntas.add("3er Tiempo");
+        juntas.add("Oficina");
+        juntas.add("Comida tia");
+        juntas.add("18 Sept");
+        juntas.add("Familia");
+        juntas.add("Rusia 2017");
     }
 
 }

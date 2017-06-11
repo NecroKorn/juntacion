@@ -67,6 +67,18 @@
 
     </LinearLayout>
 
+    <!-- ic_menu_revert , ic_media_rew, ic_media_previous-->
+    <Button
+        android:id="@+id/btn_atras"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/ic_menu_revert"
+        android:backgroundTint="#acadb1"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/detalle_inv"
+        android:layout_alignStart="@+id/detalle_inv"
+        android:layout_marginTop="11dp" />
+
 
 
 </RelativeLayout>

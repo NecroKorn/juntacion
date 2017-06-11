@@ -52,8 +52,8 @@
                     android:layout_width="45dp"
                     android:layout_height="45dp"
                     android:background="@android:drawable/ic_input_add"
-                    android:layout_toRightOf="@id/txt_tit"
                     android:scaleType="fitCenter"
+                    android:layout_toRightOf="@id/txt_tit"
                     />
 
         </RelativeLayout>
@@ -146,5 +146,18 @@
     android:layout_marginBottom="35dp"
     android:layout_marginRight="7dp"
     />
+
+    <!-- ic_menu_revert , ic_media_rew, ic_media_previous-->
+    <Button
+        android:id="@+id/btn_atras"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/ic_menu_revert"
+        android:backgroundTint="#acadb1"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/detalle_junta"
+        android:layout_alignStart="@+id/detalle_junta"
+        android:layout_marginTop="11dp" />
+
 
 </RelativeLayout>

@@ -65,11 +65,11 @@ public class MainActivity extends AppCompatActivity {
 
     void getMensajes()
     {
-        mensajes.add("Como estamos");
-        mensajes.add("Todos Bien");
-        mensajes.add("esperando en la botilleria");
-        mensajes.add("tengo sueño");
-        mensajes.add("vamos a casa de la tia");
-        mensajes.add("no se donde queda el local");
+        mensajes.add("ALEX: tengo sed");
+        mensajes.add("ALEX: Quien invita?");
+        mensajes.add("RAUL: esperando en la botilleria");
+        mensajes.add("Mane: tengo sueño");
+        mensajes.add("Julia: vamos a casa de la tia");
+        mensajes.add("ALEX: no se donde queda el local");
     }
 }
