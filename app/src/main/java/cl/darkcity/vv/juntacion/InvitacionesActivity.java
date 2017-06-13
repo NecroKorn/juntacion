@@ -1,6 +1,8 @@
 package cl.darkcity.vv.juntacion;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +24,11 @@ public class InvitacionesActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_invitaciones);
+
+        SharedPreferences appJuntacion = InvitacionesActivity.this.getSharedPreferences("appJuntacion", Context.MODE_PRIVATE);
+        String appLoguin = appJuntacion.getString("email", null);
+
+        setTitle("Juntacion - " + appLoguin);
 
         Button btnAtras = (Button) findViewById(R.id.btn_atras);
         btnAtras.setOnClickListener(new View.OnClickListener() {

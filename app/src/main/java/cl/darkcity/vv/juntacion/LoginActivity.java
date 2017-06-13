@@ -52,7 +52,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      * TODO: remove after connecting to a real authentication system.
      */
     private static final String[] DUMMY_CREDENTIALS = new String[]{
-            "test@test.com:test1"
+            "test1@test.com:test1",
+            "test2@test.com:test2",
+            "test3@test.com:test3"
     };
     /**
      * Keep track of the login task to ensure we can cancel it if requested.
@@ -336,6 +338,18 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(false);
 
             if (success) {
+
+                // Store values at the time of the login attempt.
+                String email = mEmailView.getText().toString();
+                String password = mPasswordView.getText().toString();
+
+                SharedPreferences preferencias = getSharedPreferences("appJuntacion",Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = preferencias.edit();
+
+                editor.putString("email", email);
+                editor.putString("pass", password);
+                editor.commit();
+
                 finish();
                 Intent myIntent = new Intent(LoginActivity.this,MainActivity.class);
                 LoginActivity.this.startActivity(myIntent);
