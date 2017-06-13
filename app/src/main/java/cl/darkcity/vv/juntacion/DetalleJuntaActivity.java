@@ -22,15 +22,6 @@ public class DetalleJuntaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle_junta);
 
-        Button btnInvitar = (Button) findViewById(R.id.btn_invitar);
-        btnInvitar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent myIntent = new Intent(DetalleJuntaActivity.this,InvitacionEnviadaActivity.class);
-                DetalleJuntaActivity.this.startActivity(myIntent);
-            }
-        });
-
         Intent intent = getIntent();
 
         String juntacionSeleccionada = intent.getStringExtra("juntacionSelecconada");
@@ -44,6 +35,19 @@ public class DetalleJuntaActivity extends AppCompatActivity {
             TextView fechaJuntacion = (TextView) findViewById(R.id.fecha_junta);
             fechaJuntacion.setText("25/10/2017");
         }
+
+        Button btnInvitar = (Button) findViewById(R.id.btn_invitar);
+        btnInvitar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = getIntent();
+                String juntacionSeleccionada = intent.getStringExtra("juntacionSelecconada");
+
+                Intent myIntent = new Intent(DetalleJuntaActivity.this,InvitacionEnviadaActivity.class);
+                myIntent.putExtra("juntacionSelecconada", juntacionSeleccionada);
+                DetalleJuntaActivity.this.startActivity(myIntent);
+            }
+        });
 
         ListView lsvAmigos = (ListView)findViewById(R.id.contactos_junta);
 
@@ -69,6 +73,14 @@ public class DetalleJuntaActivity extends AppCompatActivity {
             }
         });
 
+        Button btnAtras = (Button) findViewById(R.id.btn_atras);
+        btnAtras.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(DetalleJuntaActivity.this,MainActivity.class);
+                DetalleJuntaActivity.this.startActivity(myIntent);
+            }
+        });
     }
 
     void getAmigos()

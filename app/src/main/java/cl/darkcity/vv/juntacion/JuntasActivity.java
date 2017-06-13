@@ -21,15 +21,6 @@ public class JuntasActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_juntas);
 
-        Button btnNuevaJunta = (Button) findViewById(R.id.btn_nueva_junta_interior);
-        btnNuevaJunta.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent myIntent = new Intent(JuntasActivity.this,DetalleJuntaActivity.class);
-                JuntasActivity.this.startActivity(myIntent);
-            }
-        });
-
         ListView lsvJuntas = (ListView)findViewById(R.id.list_juntas);
 
         juntas = new ArrayList<String>();
@@ -51,7 +42,6 @@ public class JuntasActivity extends AppCompatActivity {
                 Intent myIntent = new Intent(JuntasActivity.this,DetalleJuntaActivity.class);
                 myIntent.putExtra("juntacionSelecconada", selectedjuntacion);
                 JuntasActivity.this.startActivity(myIntent);
-                //Toast.makeText(getApplicationContext(), "Junta seleccionada : "+selectedmovie,   Toast.LENGTH_LONG).show();
             }
         });
 
